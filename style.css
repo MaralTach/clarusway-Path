@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: linear-gradient(to right, #1e1bcf, #8bff8c);
+}
+
+.box {
+  /* border: 2px solid; */
+  margin: auto;
+  width: 75rem;
+  height: 200px;
+  display: flex;
+  box-shadow: 5px 5px 20px 5px #000000;
+  padding: 15px;
+  margin-top: 40px;
+  z-index: 1;
+  transition: 0.5s;
+  border-radius: 10px;
+}
+
+.box:hover{
+  width: 80rem;
+  height: 220px;
+  z-index: -1;
+  transition: 0.5s;
+}
+
+.title-container{
+    margin-top: 40px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.title {
+  text-align: center;
+  font-family: 'Bungee', sans-serif;
+  font-size: 4rem;
+  /* margin-top: 3rem; */
+  background: -webkit-linear-gradient(#ff4119,#ff1964, #30ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.img{
+    /* border: solid; */
+    height: 100px;
+    width: 100px;
+
+}
+.par1 {
+  /* border: solid; */
+  display: flex;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 29px;
+  height: 40px;
+  width: auto;
+}
+
+.text p:nth-child(2) {
+  /* border: solid; */
+  height: 100px;
+  width: 900px;
+}
+
+.container .box:nth-child(6) .text p:nth-child(2) {
+  font-size: 18.9px;
+}
+
+img {
+  /* border: red solid; */
+  height: 180px;
+  width: 270px;
+  display: flex;
+  border-radius: 5px;
+}
+.text {
+  height: 15px;
+  font-size: 20px;
+  /* margin: auto; */
+  margin: 5px 10px 15px 30px;
+}
+
+.btn {
+  /* margin: 10px; */
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+.btn a {
+  width: 120px;
+  height: 40px;
+  text-decoration: none;
+  margin: 4px 8px;
+  /* display: inline-block; */
+  /* padding-top:10px ; */
+  color: #fff;
+  background: #126cdb;
+  /* border: 0.3px solid #fff; */
+  position: relative;
+  z-index: 1;
+  transition: color 0.5s;
+  text-align: center;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btn a span {
+  width: 0;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #fff;
+  z-index: -1;
+  transition: 0.5s;
+  border-radius: 15px;
+}
+
+.btn a:hover span {
+  width: 100%;
+  border-radius: 15px;
+}
+.btn a:hover {
+  color: black;
+}
